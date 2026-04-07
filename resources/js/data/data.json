@@ -1,0 +1,34 @@
+[
+  { "id": 1, "department": "Bakery", "name": "Chocolate Fudge Cake (2 lbs)", "price": 1800, "category": "Cakes" },
+  { "id": 2, "department": "Bakery", "name": "Pineapple Cake (2 lbs)", "price": 1500, "category": "Cakes" },
+  { "id": 3, "department": "Bakery", "name": "Black Forest Cake (2 lbs)", "price": 1600, "category": "Cakes" },
+  { "id": 4, "department": "Bakery", "name": "Zinger Burger", "price": 550, "category": "Fast Food" },
+  { "id": 5, "department": "Bakery", "name": "Grilled Chicken Burger", "price": 600, "category": "Fast Food" },
+  { "id": 6, "department": "Bakery", "name": "Chicken Tikka Pizza (Large)", "price": 1400, "category": "Fast Food" },
+  { "id": 7, "department": "Bakery", "name": "Fajita Pizza (Medium)", "price": 1000, "category": "Fast Food" },
+  { "id": 8, "department": "Bakery", "name": "Dawn Milky Bread (Large)", "price": 220, "category": "Bread & Pastries" },
+  { "id": 9, "department": "Bakery", "name": "Dawn Bran Bread", "price": 200, "category": "Bread & Pastries" },
+  { "id": 10, "department": "Bakery", "name": "Chicken Patties (Box of 6)", "price": 450, "category": "Bread & Pastries" },
+  { "id": 11, "department": "Bakery", "name": "Mix Biscuits (1 kg)", "price": 1200, "category": "Bread & Pastries" },
+  { "id": 12, "department": "Bakery", "name": "Fresh Cream Pastries (Box of 6)", "price": 600, "category": "Cakes" },
+
+  { "id": 13, "department": "Grocery", "name": "Shan Special Bombay Biryani Masala", "price": 120, "category": "Spices & Pantry" },
+  { "id": 14, "department": "Grocery", "name": "National Tomato Ketchup (800g)", "price": 350, "category": "Spices & Pantry" },
+  { "id": 15, "department": "Grocery", "name": "Tapal Danedar Tea (800g)", "price": 1100, "category": "Spices & Pantry" },
+  { "id": 16, "department": "Grocery", "name": "Lipton Yellow Label Tea (390g)", "price": 650, "category": "Spices & Pantry" },
+  { "id": 17, "department": "Grocery", "name": "Mitchell's Fruit Farms Apple Jam (400g)", "price": 320, "category": "Spices & Pantry" },
+  
+  { "id": 18, "department": "Grocery", "name": "Olper's Full Cream Milk (1 Litre)", "price": 280, "category": "Dairy & Beverages" },
+  { "id": 19, "department": "Grocery", "name": "Milk Pak Full Cream Milk (1 Litre)", "price": 280, "category": "Dairy & Beverages" },
+  { "id": 20, "department": "Grocery", "name": "Rooh Afza Syrup (800ml)", "price": 450, "category": "Dairy & Beverages" },
+  { "id": 21, "department": "Grocery", "name": "Nestle Fruita Vitals - Chaunsa (1 Litre)", "price": 300, "category": "Dairy & Beverages" },
+  { "id": 22, "department": "Grocery", "name": "Coca-Cola (1.5 Litre)", "price": 160, "category": "Dairy & Beverages" },
+  { "id": 23, "department": "Grocery", "name": "Sprite (1.5 Litre)", "price": 160, "category": "Dairy & Beverages" },
+
+  { "id": 24, "department": "Grocery", "name": "Lays French Cheese Chips (Large)", "price": 100, "category": "Snacks & Sweets" },
+  { "id": 25, "department": "Grocery", "name": "Kurkure Red Chilli Jhatpat (Large)", "price": 80, "category": "Snacks & Sweets" },
+  { "id": 26, "department": "Grocery", "name": "Peek Freans Sooper Biscuits (Family Pack)", "price": 150, "category": "Snacks & Sweets" },
+  { "id": 27, "department": "Grocery", "name": "Wall's Magnum Classic Ice Cream", "price": 250, "category": "Ice Creams" },
+  { "id": 28, "department": "Grocery", "name": "Wall's Cornetto Chocolate", "price": 150, "category": "Ice Creams" },
+  { "id": 29, "department": "Grocery", "name": "Omore Strawberry Ice Cream (1 Litre tub)", "price": 600, "category": "Ice Creams" }
+]
