@@ -1,0 +1,85 @@
+{
+  "_Pagination-BkAv7bcq.js": {
+    "file": "assets/Pagination-BkAv7bcq.js",
+    "name": "Pagination",
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_dist-BoCDozHL.js",
+      "_Toast-DZHZHhSu.js"
+    ]
+  },
+  "_Toast-DZHZHhSu.js": {
+    "file": "assets/Toast-DZHZHhSu.js",
+    "name": "Toast",
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js"
+    ]
+  },
+  "_dist-BoCDozHL.js": {
+    "file": "assets/dist-BoCDozHL.js",
+    "name": "dist",
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js"
+    ]
+  },
+  "_jsx-runtime-CXrijb2r.js": {
+    "file": "assets/jsx-runtime-CXrijb2r.js",
+    "name": "jsx-runtime"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-D2T2ciEt.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/Pages/Admin.tsx": {
+    "file": "assets/Admin-5fdCaOBl.js",
+    "name": "Admin",
+    "src": "resources/js/Pages/Admin.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_Pagination-BkAv7bcq.js",
+      "_Toast-DZHZHhSu.js"
+    ]
+  },
+  "resources/js/Pages/AdminProducts.tsx": {
+    "file": "assets/AdminProducts-vFmdtwJp.js",
+    "name": "AdminProducts",
+    "src": "resources/js/Pages/AdminProducts.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_Pagination-BkAv7bcq.js",
+      "_Toast-DZHZHhSu.js"
+    ]
+  },
+  "resources/js/Pages/Home.tsx": {
+    "file": "assets/Home-Df9qJOzI.js",
+    "name": "Home",
+    "src": "resources/js/Pages/Home.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_Toast-DZHZHhSu.js"
+    ]
+  },
+  "resources/js/app.tsx": {
+    "file": "assets/app-BdsS1VLU.js",
+    "name": "app",
+    "src": "resources/js/app.tsx",
+    "isEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_dist-BoCDozHL.js"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/Admin.tsx",
+      "resources/js/Pages/AdminProducts.tsx",
+      "resources/js/Pages/Home.tsx"
+    ]
+  }
+}
