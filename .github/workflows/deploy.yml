@@ -1,0 +1,57 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ "staging" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.4'
+        extensions: mbstring, xml, bcmath, mysql, curl, zip
+
+    - name: Install Dependencies
+      run: composer install --no-dev --optimize-autoloader
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install NPM Dependencies & Build
+      run: |
+        npm install
+        npm run build
+
+    - name: Deploy to Server
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        REMOTE_HOST: 20.216.23.116
+        REMOTE_USER: azureuser
+        TARGET: /var/www/zafarstore
+        ARGS: "-rlgoDzvc -i --delete"
+        EXCLUDE: "/node_modules/, /.git/, /storage/, /bootstrap/cache/, .env"
+
+    - name: Post-Deployment Commands
+      uses: appleboy/ssh-action@master
+      with:
+        host: 20.216.23.116
+        username: azureuser
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /var/www/zafarstore
+          php artisan migrate --force
+          php artisan config:cache
+          php artisan route:cache
+          php artisan view:cache
+          sudo chown -R azureuser:www-data storage bootstrap/cache
+          sudo chmod -R 775 storage bootstrap/cache
