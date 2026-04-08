@@ -1,22 +1,33 @@
 {
-  "_Pagination-BkAv7bcq.js": {
-    "file": "assets/Pagination-BkAv7bcq.js",
+  "_AdminLayout-DOJfF98D.js": {
+    "file": "assets/AdminLayout-DOJfF98D.js",
+    "name": "AdminLayout",
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_dist-C5rHI1rL.js"
+    ]
+  },
+  "_Pagination-9dNGyysu.js": {
+    "file": "assets/Pagination-9dNGyysu.js",
     "name": "Pagination",
     "imports": [
       "_jsx-runtime-CXrijb2r.js",
-      "_dist-BoCDozHL.js",
-      "_Toast-DZHZHhSu.js"
+      "_Toast-CB7310PZ.js"
     ]
   },
-  "_Toast-DZHZHhSu.js": {
-    "file": "assets/Toast-DZHZHhSu.js",
+  "_Toast-CB7310PZ.js": {
+    "file": "assets/Toast-CB7310PZ.js",
     "name": "Toast",
     "imports": [
       "_jsx-runtime-CXrijb2r.js"
     ]
   },
-  "_dist-BoCDozHL.js": {
-    "file": "assets/dist-BoCDozHL.js",
+  "_api-BWjn9fNP.js": {
+    "file": "assets/api-BWjn9fNP.js",
+    "name": "api"
+  },
+  "_dist-C5rHI1rL.js": {
+    "file": "assets/dist-C5rHI1rL.js",
     "name": "dist",
     "imports": [
       "_jsx-runtime-CXrijb2r.js"
@@ -27,7 +38,7 @@
     "name": "jsx-runtime"
   },
   "resources/css/app.css": {
-    "file": "assets/app-D2T2ciEt.css",
+    "file": "assets/app-BibSEBeu.css",
     "name": "app",
     "names": [
       "app.css"
@@ -36,50 +47,80 @@
     "isEntry": true
   },
   "resources/js/Pages/Admin.tsx": {
-    "file": "assets/Admin-5fdCaOBl.js",
+    "file": "assets/Admin-D7qVKdDP.js",
     "name": "Admin",
     "src": "resources/js/Pages/Admin.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-CXrijb2r.js",
-      "_Pagination-BkAv7bcq.js",
-      "_Toast-DZHZHhSu.js"
+      "_AdminLayout-DOJfF98D.js",
+      "_Toast-CB7310PZ.js",
+      "_Pagination-9dNGyysu.js",
+      "_api-BWjn9fNP.js"
+    ]
+  },
+  "resources/js/Pages/AdminCustomOrders.tsx": {
+    "file": "assets/AdminCustomOrders-C_azVdz1.js",
+    "name": "AdminCustomOrders",
+    "src": "resources/js/Pages/AdminCustomOrders.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_dist-C5rHI1rL.js",
+      "_AdminLayout-DOJfF98D.js",
+      "_Toast-CB7310PZ.js"
     ]
   },
   "resources/js/Pages/AdminProducts.tsx": {
-    "file": "assets/AdminProducts-vFmdtwJp.js",
+    "file": "assets/AdminProducts-C6xAuKIT.js",
     "name": "AdminProducts",
     "src": "resources/js/Pages/AdminProducts.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-CXrijb2r.js",
-      "_Pagination-BkAv7bcq.js",
-      "_Toast-DZHZHhSu.js"
+      "_AdminLayout-DOJfF98D.js",
+      "_Toast-CB7310PZ.js",
+      "_Pagination-9dNGyysu.js",
+      "_api-BWjn9fNP.js"
     ]
   },
   "resources/js/Pages/Home.tsx": {
-    "file": "assets/Home-Df9qJOzI.js",
+    "file": "assets/Home-DBc_eoGH.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-CXrijb2r.js",
-      "_Toast-DZHZHhSu.js"
+      "_dist-C5rHI1rL.js",
+      "_Toast-CB7310PZ.js"
+    ]
+  },
+  "resources/js/Pages/PreviousOrder.tsx": {
+    "file": "assets/PreviousOrder-CQKliqiN.js",
+    "name": "PreviousOrder",
+    "src": "resources/js/Pages/PreviousOrder.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-CXrijb2r.js",
+      "_Toast-CB7310PZ.js",
+      "_api-BWjn9fNP.js"
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-BdsS1VLU.js",
+    "file": "assets/app-KiNza-DQ.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
     "imports": [
       "_jsx-runtime-CXrijb2r.js",
-      "_dist-BoCDozHL.js"
+      "_dist-C5rHI1rL.js"
     ],
     "dynamicImports": [
       "resources/js/Pages/Admin.tsx",
+      "resources/js/Pages/AdminCustomOrders.tsx",
       "resources/js/Pages/AdminProducts.tsx",
-      "resources/js/Pages/Home.tsx"
+      "resources/js/Pages/Home.tsx",
+      "resources/js/Pages/PreviousOrder.tsx"
     ]
   }
 }
