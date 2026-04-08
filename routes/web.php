@@ -33,4 +33,5 @@ Route::prefix('admin')->group(function () {
 
     // Custom Order CRUD
     Route::delete('/custom-orders/{id}', [CustomOrderController::class, 'destroy'])->name('admin.custom-orders.destroy');
+    Route::patch('/custom-orders/{id}/status', [CustomOrderController::class, 'updateStatus'])->name('admin.custom-orders.update-status');
 });

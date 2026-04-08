@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class CustomOrder extends Model
 {
-    protected $fillable = ['phone', 'description'];
+    protected $fillable = ['phone', 'description', 'status'];
 }

@@ -11,10 +11,26 @@ class CustomOrderController extends Controller
     /**
      * Display a listing of custom orders (Admin).
      */
-    public function index()
+    public function index(Request $request)
     {
+        $query = CustomOrder::query();
+
+        // Search by phone or description
+        if ($request->search) {
+            $query->where(function($q) use ($request) {
+                $q->where('phone', 'like', "%{$request->search}%")
+                  ->orWhere('description', 'like', "%{$request->search}%");
+            });
+        }
+
+        // Filter by status
+        if ($request->status) {
+            $query->where('status', $request->status);
+        }
+
         return Inertia::render('AdminCustomOrders', [
-            'customOrders' => CustomOrder::latest()->get()
+            'customOrders' => $query->latest()->paginate(10)->withQueryString(),
+            'filters' => $request->only(['search', 'status'])
         ]);
     }
 
@@ -27,9 +43,23 @@ class CustomOrderController extends Controller
         CustomOrder::create([
             'phone' => (string) $request->phone,
             'description' => (string) $request->description,
+            'status' => 'pending',
         ]);
 
         return back()->with('success', 'Order submitted successfully!');
+    }
+
+    /**
+     * Update the status of the specified custom order.
+     */
+    public function updateStatus(Request $request, $id)
+    {
+        $order = CustomOrder::findOrFail($id);
+        $order->update([
+            'status' => $request->status
+        ]);
+
+        return back()->with('success', 'Status updated successfully.');
     }
 
     /**
