@@ -27,7 +27,7 @@ Before pushing any changes, you must build the assets locally:
 
 ### Step 1: Push to Main Branch
 1. `git checkout main`
-2. `git add .` (This will include the new build files)
+2. `git add .`
 3. `git commit -m "Description of your changes"`
 4. `git push origin main`
 
@@ -43,7 +43,8 @@ After pushing to staging, connect to the server and pull the changes manually:
 2. `cd /var/www/zafarstore`
 3. `git checkout staging`
 4. `git pull origin staging`
-5. `php artisan optimize:clear` (To clear any cached files)
+5. `php artisan migrate --force` (To apply database changes)
+6. `php artisan optimize:clear` (To clear any cached files)
 
 ### Step 4: Back to Development
 1. `git checkout main`

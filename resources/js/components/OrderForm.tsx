@@ -14,7 +14,7 @@ export default function OrderForm() {
   const [customerName, setCustomerName] = useState("");
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
-  const [errors, setErrors] = useState<{name?: string, phone?: string, address?: string}>({});
+  const [errors, setErrors] = useState<{ name?: string, phone?: string, address?: string }>({});
 
   // Products list & state
   const [productsList, setProductsList] = useState<Product[]>([]);
@@ -57,7 +57,7 @@ export default function OrderForm() {
   // Filter products by department and category
   const filteredProducts = useMemo(() => {
     let filtered = productsList.filter(p => p.department === activeDepartment);
-    
+
     if (activeCategory !== "All") {
       filtered = filtered.filter((p) => p.category === activeCategory);
     }
@@ -101,8 +101,8 @@ export default function OrderForm() {
   /** Submit the order */
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    const newErrors: {name?: string, phone?: string, address?: string} = {};
+
+    const newErrors: { name?: string, phone?: string, address?: string } = {};
 
     if (customerName.trim().length < 3) {
       newErrors.name = "Full name must be at least 3 characters long.";
@@ -110,7 +110,7 @@ export default function OrderForm() {
 
     const phoneDigits = phone.replace(/\D/g, '');
     const isValidPhone = /^[\d\s+\-()]+$/.test(phone) && phoneDigits.length >= 10 && phoneDigits.length <= 15;
-    
+
     if (!isValidPhone) {
       newErrors.phone = "Enter a pure numeric phone number (e.g. 0300-1234567).";
     }
@@ -124,7 +124,7 @@ export default function OrderForm() {
       setToast({ message: "Please correct the highlighted errors.", type: "error" });
       return;
     }
-    
+
     // Clear errors if all good
     setErrors({});
 
@@ -191,14 +191,13 @@ export default function OrderForm() {
                 value={customerName}
                 onChange={(e) => {
                   setCustomerName(e.target.value);
-                  if (errors.name) setErrors(prev => ({...prev, name: undefined}));
+                  if (errors.name) setErrors(prev => ({ ...prev, name: undefined }));
                 }}
                 placeholder="e.g. Muhammad Ali"
-                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all ${
-                  errors.name 
-                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50" 
+                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all ${errors.name
+                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50"
                     : "border-white/10 focus:ring-amber-500/50 focus:border-amber-500/50"
-                }`}
+                  }`}
               />
               {errors.name && <p className="text-red-400 text-xs mt-1.5">{errors.name}</p>}
             </div>
@@ -212,14 +211,13 @@ export default function OrderForm() {
                 value={phone}
                 onChange={(e) => {
                   setPhone(e.target.value);
-                  if (errors.phone) setErrors(prev => ({...prev, phone: undefined}));
+                  if (errors.phone) setErrors(prev => ({ ...prev, phone: undefined }));
                 }}
                 placeholder="e.g. 0300-1234567"
-                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all ${
-                  errors.phone 
-                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50" 
+                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all ${errors.phone
+                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50"
                     : "border-white/10 focus:ring-amber-500/50 focus:border-amber-500/50"
-                }`}
+                  }`}
               />
               {errors.phone && <p className="text-red-400 text-xs mt-1.5">{errors.phone}</p>}
             </div>
@@ -232,15 +230,14 @@ export default function OrderForm() {
                 value={address}
                 onChange={(e) => {
                   setAddress(e.target.value);
-                  if (errors.address) setErrors(prev => ({...prev, address: undefined}));
+                  if (errors.address) setErrors(prev => ({ ...prev, address: undefined }));
                 }}
                 placeholder="Enter your complete delivery address"
                 rows={2}
-                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all resize-none ${
-                  errors.address 
-                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50" 
+                className={`w-full px-4 py-3 rounded-xl bg-white/5 border text-white placeholder-gray-500 focus:outline-none focus:ring-2 transition-all resize-none ${errors.address
+                    ? "border-red-500 focus:ring-red-500/50 focus:border-red-500/50"
                     : "border-white/10 focus:ring-amber-500/50 focus:border-amber-500/50"
-                }`}
+                  }`}
               />
               {errors.address && <p className="text-red-400 text-xs mt-1.5">{errors.address}</p>}
             </div>
@@ -264,11 +261,10 @@ export default function OrderForm() {
                 setActiveDepartment("Bakery");
                 setActiveCategory("All");
               }}
-              className={`flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all ${
-                activeDepartment === "Bakery"
+              className={`flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all ${activeDepartment === "Bakery"
                   ? "bg-amber-500 text-white shadow-md shadow-amber-500/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5"
-              }`}
+                }`}
             >
               Bakery & Fast Food
             </button>
@@ -278,11 +274,10 @@ export default function OrderForm() {
                 setActiveDepartment("Grocery");
                 setActiveCategory("All");
               }}
-              className={`flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all ${
-                activeDepartment === "Grocery"
+              className={`flex-1 py-2 px-4 rounded-lg text-sm font-bold transition-all ${activeDepartment === "Grocery"
                   ? "bg-amber-500 text-white shadow-md shadow-amber-500/20"
                   : "text-gray-400 hover:text-white hover:bg-white/5"
-              }`}
+                }`}
             >
               Grocery & Essentials
             </button>
@@ -295,11 +290,10 @@ export default function OrderForm() {
                 key={cat}
                 type="button"
                 onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer ${
-                  activeCategory === cat
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all cursor-pointer ${activeCategory === cat
                     ? "bg-amber-500 text-white shadow-lg shadow-amber-500/30"
                     : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white border border-white/10"
-                }`}
+                  }`}
               >
                 {cat}
               </button>
@@ -320,11 +314,10 @@ export default function OrderForm() {
                     key={product.id}
                     type="button"
                     onClick={() => addToCart(product)}
-                    className={`group relative p-4 rounded-xl text-left transition-all duration-200 cursor-pointer border ${
-                      inCart
+                    className={`group relative p-4 rounded-xl text-left transition-all duration-200 cursor-pointer border ${inCart
                         ? "bg-amber-500/10 border-amber-500/30 ring-1 ring-amber-500/20"
                         : "bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20"
-                    }`}
+                      }`}
                   >
                     <div className="flex justify-between items-start">
                       <div>
@@ -440,7 +433,7 @@ export default function OrderForm() {
         {/* ── Submit Button ───────────────────────────── */}
         <Button
           type="submit"
-          size="lg"
+          size="md"
           loading={loading}
           className="w-full"
           disabled={cart.length === 0}

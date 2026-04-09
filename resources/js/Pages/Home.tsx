@@ -34,7 +34,7 @@ export default function Home() {
       <div className="w-full max-w-xl">
         {/* Header */}
         <div className="text-center mb-10">
-          <h1 className="text-4xl sm:text-6xl font-black text-white mb-6 tracking-tight">
+          <h1 className="text-4xl pt-10 sm:text-6xl font-black text-white mb-6 tracking-tight">
             Zafar{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
               Store
@@ -55,10 +55,13 @@ export default function Home() {
               Phone Number
             </label>
             <input
-              type="text"
+              type="tel"
               value={data.phone}
-              onChange={(e) => setData("phone", e.target.value)}
-              placeholder="e.g. 0300-1234567"
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, "");
+                if (value.length <= 11) setData("phone", value);
+              }}
+              placeholder="e.g. 03001234567"
               className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/50 transition-all text-lg"
               required
             />
@@ -81,7 +84,7 @@ export default function Home() {
           <Button
             type="submit"
             size="lg"
-            className="w-full py-5 rounded-2xl text-xl font-black uppercase tracking-widest shadow-xl shadow-amber-500/20"
+            className="w-full rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-amber-500/20"
             loading={processing}
           >
             Place Quick Order
@@ -89,7 +92,7 @@ export default function Home() {
         </form>
 
         {/* Navigation to old menu */}
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center text-sm">
           <Link
             href="/previous-order"
             className="inline-flex items-center gap-2 text-gray-500 hover:text-amber-400 font-bold transition-all group"
