@@ -23,12 +23,9 @@ export default function Navbar() {
               Z
             </div>
             <div>
-              <h1 className="text-lg font-bold text-white leading-tight">
+              <h1 className="text-xl font-bold text-white leading-tight">
                 Zafar Store
               </h1>
-              <p className="text-[10px] text-amber-400/80 font-medium tracking-widest uppercase">
-                + Bakers
-              </p>
             </div>
           </Link>
 
