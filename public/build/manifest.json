@@ -1,44 +1,36 @@
 {
-  "_Pagination-9GikGjxh.js": {
-    "file": "assets/Pagination-9GikGjxh.js",
+  "_Pagination-CyPzrNep.js": {
+    "file": "assets/Pagination-CyPzrNep.js",
     "name": "Pagination",
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_dist-C5rHI1rL.js",
-      "_Toast-CB7310PZ.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Toast-DPUYEANo.js"
     ]
   },
-  "_Spinner-DUNBDtzu.js": {
-    "file": "assets/Spinner-DUNBDtzu.js",
+  "_Spinner-D2VsYSVv.js": {
+    "file": "assets/Spinner-D2VsYSVv.js",
     "name": "Spinner",
     "imports": [
-      "_jsx-runtime-CXrijb2r.js"
+      "_jsx-runtime-mkVr_7OR.js"
     ]
   },
-  "_Toast-CB7310PZ.js": {
-    "file": "assets/Toast-CB7310PZ.js",
+  "_Toast-DPUYEANo.js": {
+    "file": "assets/Toast-DPUYEANo.js",
     "name": "Toast",
     "imports": [
-      "_jsx-runtime-CXrijb2r.js"
+      "_jsx-runtime-mkVr_7OR.js"
     ]
   },
-  "_api-BWjn9fNP.js": {
-    "file": "assets/api-BWjn9fNP.js",
+  "_api-6gdh_B_q.js": {
+    "file": "assets/api-6gdh_B_q.js",
     "name": "api"
   },
-  "_dist-C5rHI1rL.js": {
-    "file": "assets/dist-C5rHI1rL.js",
-    "name": "dist",
-    "imports": [
-      "_jsx-runtime-CXrijb2r.js"
-    ]
-  },
-  "_jsx-runtime-CXrijb2r.js": {
-    "file": "assets/jsx-runtime-CXrijb2r.js",
+  "_jsx-runtime-mkVr_7OR.js": {
+    "file": "assets/jsx-runtime-mkVr_7OR.js",
     "name": "jsx-runtime"
   },
   "resources/css/app.css": {
-    "file": "assets/app-rEL9bkEC.css",
+    "file": "assets/app-DCej5Ky-.css",
     "name": "app",
     "names": [
       "app.css"
@@ -47,73 +39,70 @@
     "isEntry": true
   },
   "resources/js/Pages/Admin.tsx": {
-    "file": "assets/Admin-CplKzs93.js",
+    "file": "assets/Admin-yr4QIEgx.js",
     "name": "Admin",
     "src": "resources/js/Pages/Admin.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_Pagination-9GikGjxh.js",
-      "_Toast-CB7310PZ.js",
-      "_Spinner-DUNBDtzu.js",
-      "_api-BWjn9fNP.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Pagination-CyPzrNep.js",
+      "_Toast-DPUYEANo.js",
+      "_Spinner-D2VsYSVv.js",
+      "_api-6gdh_B_q.js"
     ]
   },
   "resources/js/Pages/AdminCustomOrders.tsx": {
-    "file": "assets/AdminCustomOrders-ClegVfcO.js",
+    "file": "assets/AdminCustomOrders-B0Xz614j.js",
     "name": "AdminCustomOrders",
     "src": "resources/js/Pages/AdminCustomOrders.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_dist-C5rHI1rL.js",
-      "_Pagination-9GikGjxh.js",
-      "_Toast-CB7310PZ.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Pagination-CyPzrNep.js",
+      "_Toast-DPUYEANo.js"
     ]
   },
   "resources/js/Pages/AdminProducts.tsx": {
-    "file": "assets/AdminProducts-DJnATbQg.js",
+    "file": "assets/AdminProducts-Dd-k4oQR.js",
     "name": "AdminProducts",
     "src": "resources/js/Pages/AdminProducts.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_Pagination-9GikGjxh.js",
-      "_Toast-CB7310PZ.js",
-      "_Spinner-DUNBDtzu.js",
-      "_api-BWjn9fNP.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Pagination-CyPzrNep.js",
+      "_Toast-DPUYEANo.js",
+      "_Spinner-D2VsYSVv.js",
+      "_api-6gdh_B_q.js"
     ]
   },
   "resources/js/Pages/Home.tsx": {
-    "file": "assets/Home-DBc_eoGH.js",
+    "file": "assets/Home-DYIU4Z7O.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_dist-C5rHI1rL.js",
-      "_Toast-CB7310PZ.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Toast-DPUYEANo.js"
     ]
   },
   "resources/js/Pages/PreviousOrder.tsx": {
-    "file": "assets/PreviousOrder-CQKliqiN.js",
+    "file": "assets/PreviousOrder-DzpVAVwt.js",
     "name": "PreviousOrder",
     "src": "resources/js/Pages/PreviousOrder.tsx",
     "isDynamicEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_Toast-CB7310PZ.js",
-      "_api-BWjn9fNP.js"
+      "_jsx-runtime-mkVr_7OR.js",
+      "_Toast-DPUYEANo.js",
+      "_api-6gdh_B_q.js"
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-Ddgdv4nr.js",
+    "file": "assets/app-DBPuoyxu.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
     "imports": [
-      "_jsx-runtime-CXrijb2r.js",
-      "_dist-C5rHI1rL.js"
+      "_jsx-runtime-mkVr_7OR.js"
     ],
     "dynamicImports": [
       "resources/js/Pages/Admin.tsx",
