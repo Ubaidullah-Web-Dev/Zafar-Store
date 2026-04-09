@@ -21,20 +21,31 @@ ssh -i ~/Downloads/zafarstore_key.pem azureuser@20.216.23.116
 
 Follow these steps to deploy changes from your local machine to the live site.
 
+### Step 0: Build locally
+Before pushing any changes, you must build the assets locally:
+1. `npm run build`
+
 ### Step 1: Push to Main Branch
 1. `git checkout main`
-2. `git add .`
+2. `git add .` (This will include the new build files)
 3. `git commit -m "Description of your changes"`
 4. `git push origin main`
 
-### Step 2: Push to Staging (Triggers Deployment)
-The server pulling and deployment are triggered automatically when you push to `staging`.
+### Step 2: Push to Staging
 1. `git checkout staging`
 2. `git pull origin staging`
 3. `git merge main`
 4. `git push origin staging`
 
-### Step 3: Back to Development
+### Step 3: Pull on Server
+After pushing to staging, connect to the server and pull the changes manually:
+1. `ssh -i ~/Downloads/zafarstore_key.pem azureuser@20.216.23.116`
+2. `cd /var/www/zafarstore`
+3. `git checkout staging`
+4. `git pull origin staging`
+5. `php artisan optimize:clear` (To clear any cached files)
+
+### Step 4: Back to Development
 1. `git checkout main`
 
 ---
