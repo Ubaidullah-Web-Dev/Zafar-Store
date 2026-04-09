@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <footer className="border-t border-white/5 py-6">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <p className="text-gray-600 text-sm">
-                        © {new Date().getFullYear()} Zafar Store + Bakers. All rights reserved.
+                        © {new Date().getFullYear()} Zafar Store. All rights reserved.
                     </p>
                 </div>
             </footer>
@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 };
 
 createInertiaApp({
-    title: (title) => `${title} - Zafar Store + Bakers`,
+    title: (title) => `${title} - Zafar Store`,
     resolve: (name) => {
         const page = resolvePageComponent(
             `./Pages/${name}.tsx`,
