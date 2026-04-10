@@ -1,6 +1,6 @@
 {
-  "_Pagination-CyPzrNep.js": {
-    "file": "assets/Pagination-CyPzrNep.js",
+  "_Pagination-Y9wJGFu5.js": {
+    "file": "assets/Pagination-Y9wJGFu5.js",
     "name": "Pagination",
     "imports": [
       "_jsx-runtime-mkVr_7OR.js",
@@ -30,7 +30,7 @@
     "name": "jsx-runtime"
   },
   "resources/css/app.css": {
-    "file": "assets/app-C46ZdFM1.css",
+    "file": "assets/app-rgF6UXWK.css",
     "name": "app",
     "names": [
       "app.css"
@@ -39,44 +39,53 @@
     "isEntry": true
   },
   "resources/js/Pages/Admin.tsx": {
-    "file": "assets/Admin-yr4QIEgx.js",
+    "file": "assets/Admin-CMKO2CG4.js",
     "name": "Admin",
     "src": "resources/js/Pages/Admin.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-mkVr_7OR.js",
-      "_Pagination-CyPzrNep.js",
+      "_Pagination-Y9wJGFu5.js",
       "_Toast-DPUYEANo.js",
       "_Spinner-D2VsYSVv.js",
       "_api-6gdh_B_q.js"
     ]
   },
   "resources/js/Pages/AdminCustomOrders.tsx": {
-    "file": "assets/AdminCustomOrders-B0Xz614j.js",
+    "file": "assets/AdminCustomOrders-tLsfjCLt.js",
     "name": "AdminCustomOrders",
     "src": "resources/js/Pages/AdminCustomOrders.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-mkVr_7OR.js",
-      "_Pagination-CyPzrNep.js",
+      "_Pagination-Y9wJGFu5.js",
       "_Toast-DPUYEANo.js"
     ]
   },
+  "resources/js/Pages/AdminLogin.tsx": {
+    "file": "assets/AdminLogin-2vR6Pe82.js",
+    "name": "AdminLogin",
+    "src": "resources/js/Pages/AdminLogin.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_jsx-runtime-mkVr_7OR.js"
+    ]
+  },
   "resources/js/Pages/AdminProducts.tsx": {
-    "file": "assets/AdminProducts-Dd-k4oQR.js",
+    "file": "assets/AdminProducts-vrUdIXUp.js",
     "name": "AdminProducts",
     "src": "resources/js/Pages/AdminProducts.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_jsx-runtime-mkVr_7OR.js",
-      "_Pagination-CyPzrNep.js",
+      "_Pagination-Y9wJGFu5.js",
       "_Toast-DPUYEANo.js",
       "_Spinner-D2VsYSVv.js",
       "_api-6gdh_B_q.js"
     ]
   },
   "resources/js/Pages/Home.tsx": {
-    "file": "assets/Home-nN4b69GB.js",
+    "file": "assets/Home-DpEzKK9m.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.tsx",
     "isDynamicEntry": true,
@@ -86,7 +95,7 @@
     ]
   },
   "resources/js/Pages/PreviousOrder.tsx": {
-    "file": "assets/PreviousOrder-BzkyXfg7.js",
+    "file": "assets/PreviousOrder-CT1bErKC.js",
     "name": "PreviousOrder",
     "src": "resources/js/Pages/PreviousOrder.tsx",
     "isDynamicEntry": true,
@@ -97,7 +106,7 @@
     ]
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-CKeT3iN3.js",
+    "file": "assets/app-DOTxvhSm.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
@@ -107,6 +116,7 @@
     "dynamicImports": [
       "resources/js/Pages/Admin.tsx",
       "resources/js/Pages/AdminCustomOrders.tsx",
+      "resources/js/Pages/AdminLogin.tsx",
       "resources/js/Pages/AdminProducts.tsx",
       "resources/js/Pages/Home.tsx",
       "resources/js/Pages/PreviousOrder.tsx"

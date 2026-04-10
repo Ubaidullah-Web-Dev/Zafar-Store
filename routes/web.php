@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CustomOrderController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -17,10 +18,15 @@ Route::get('/previous-order', function () {
 // Submit Custom Order
 Route::post('/custom-orders', [CustomOrderController::class, 'store'])->name('custom-orders.store');
 
-// Admin Routes
-Route::prefix('admin')->group(function () {
+// Admin Login (at /admin itself)
+Route::get('/admin', [AuthController::class, 'showLogin'])->name('admin.login');
+Route::post('/admin', [AuthController::class, 'login'])->name('admin.login.submit');
+Route::post('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
+
+// Admin Routes (protected)
+Route::prefix('admin')->middleware('admin.auth')->group(function () {
     // Default Admin Route: Custom Orders
-    Route::get('/', [CustomOrderController::class, 'index'])->name('admin.custom-orders.index');
+    Route::get('/orders', [CustomOrderController::class, 'index'])->name('admin.custom-orders.index');
 
     // Renamed Old Dashboard
     Route::get('/old-dashboard', function () {

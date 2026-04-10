@@ -42,7 +42,7 @@ export default function AdminCustomOrders({ customOrders, filters = {} }: Props)
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (search !== (filters.search || "") || statusFilter !== (filters.status || "")) {
-        router.get("/admin", { search, status: statusFilter }, {
+        router.get("/admin/orders", { search, status: statusFilter }, {
           preserveState: true,
           replace: true,
         });
@@ -195,7 +195,7 @@ export default function AdminCustomOrders({ customOrders, filters = {} }: Props)
             totalItems={customOrders.total}
             itemsPerPage={customOrders.per_page}
             currentPage={customOrders.current_page}
-            onPageChange={(page) => router.get("/admin", { ...filters, page }, { preserveState: true })}
+            onPageChange={(page) => router.get("/admin/orders", { ...filters, page }, { preserveState: true })}
           />
         </div>
       </div>
