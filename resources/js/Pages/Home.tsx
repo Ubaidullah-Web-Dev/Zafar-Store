@@ -48,7 +48,7 @@ export default function Home() {
         {/* Form */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl shadow-black/50 space-y-6"
+          className="bg-white/5 backdrop-blur-xl border border-white/10 mb-10 rounded-3xl p-8 shadow-2xl shadow-black/50 space-y-6"
         >
           <div>
             <label className="block text-sm font-bold text-gray-300 mb-2 uppercase tracking-widest">
@@ -90,32 +90,6 @@ export default function Home() {
             Place Quick Order
           </Button>
         </form>
-
-        {/* Navigation to old menu */}
-        <div className="mt-12 text-center text-sm">
-          <Link
-            href="/previous-order"
-            className="inline-flex items-center gap-2 text-gray-500 hover:text-amber-400 font-bold transition-all group"
-          >
-            Looking for our full menu?
-            <span className="border-b border-gray-500 group-hover:border-amber-400 transition-all">
-              View All Items
-            </span>
-            <svg
-              className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </Link>
-        </div>
       </div>
     </div>
   );
