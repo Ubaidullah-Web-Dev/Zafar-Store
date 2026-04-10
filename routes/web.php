@@ -19,6 +19,7 @@ Route::get('/previous-order', function () {
 Route::post('/custom-orders', [CustomOrderController::class, 'store'])->name('custom-orders.store');
 
 // Admin Login (at /admin itself)
+Route::redirect('/login', '/admin')->name('login');
 Route::get('/admin', [AuthController::class, 'showLogin'])->name('admin.login');
 Route::post('/admin', [AuthController::class, 'login'])->name('admin.login.submit');
 Route::post('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
